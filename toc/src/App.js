@@ -1,11 +1,12 @@
-import React, {useState, useEffect} from "react";
-import { Toc } from "./Components/Toc/Toc";
-import "./App.css";
+import React, {useState} from "react";
+import data from './HelpTOC.json';
+import './App.css';
+import {Titles} from './Components/Titles/Titles'
 
 export function App() {
+  const {entities, topLevelIds} = data;
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
-      <Toc/>
-    </div>
+      <Titles entities={entities} ids={topLevelIds}/>
   );
 }
