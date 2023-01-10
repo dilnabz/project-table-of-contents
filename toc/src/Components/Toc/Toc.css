@@ -1,0 +1,18 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+.item, .item-content {
+    margin: 0 0 0 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.item:hover {
+    text-decoration: underline;
+}
+
+.hide {
+    display: none;
+}
